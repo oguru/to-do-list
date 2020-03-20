@@ -1,0 +1,55 @@
+$postItBg:#FEFA7E;
+
+.toDoCreator {
+    padding: 20px 0 60px 40px;
+    background-image: url(../../assets/main-postit.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    width: 500px;
+    height: 500px;
+
+    span {
+        padding: 1px 10px 1px 5px;
+        background-color: $postItBg;
+    }
+
+    h1 {
+        text-align: center;
+    }
+
+    .container {
+        padding: 15px 0;
+    }
+
+    label {
+        vertical-align: top;
+        padding-right: 5px;
+    }
+
+    input {
+        opacity: 0.3;
+        border: none;
+        border-radius: 10%;
+        font-size: 15px;
+        word-break: break-all;
+        word-wrap: normal
+        }
+
+    .task {
+        width: 85%;
+        height: 100px;
+        padding-bottom: 85px;
+    }
+
+    .button {
+        display: flex;
+        justify-content: center;
+        padding-top: 15px;
+        
+        button {
+            // background-color: #e0e008;
+
+        }
+    }
+}
