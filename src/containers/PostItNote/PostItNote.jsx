@@ -2,9 +2,7 @@ import React from "react";
 import styles from "./PostItNote.module.scss";
 import ToDoItem from "../../components/ToDoItem"
 
-const PostItNote = (props) => {
-
-  const {}
+const PostItNote = () => {
 
   return (
     <>

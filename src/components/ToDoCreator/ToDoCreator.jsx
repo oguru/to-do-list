@@ -10,7 +10,7 @@ const ToDoCreator = props => {
   useEffect(() => {
     storeColor(color)
   });
-  
+
   return (
     <>
       <div className={`${styles.toDoCreator} ${styles[color]}`}>
@@ -38,11 +38,26 @@ const ToDoCreator = props => {
           />
         </div>
         <div className={styles.colorButtons}>
-          <button onClick={() => changeColor("yellow")} style={{backgroundColor: "#faee30"}}></button>
-          <button onClick={() => changeColor("blue")} style={{backgroundColor: "#6bbbe5"}}></button>
-          <button onClick={() => changeColor("green")} style={{backgroundColor: "#90d457"}}></button>
-          <button onClick={() => changeColor("orange")} style={{backgroundColor: "#f9c276"}}></button>
-          <button onClick={() => changeColor("pink")} style={{backgroundColor: "#f99fcb"}}></button>
+          <button
+            onClick={() => changeColor("yellow")}
+            style={{ backgroundColor: "#faee30" }}>
+          </button>
+          <button
+            onClick={() => changeColor("blue")}
+            style={{ backgroundColor: "#6bbbe5" }}>
+          </button>
+          <button
+            onClick={() => changeColor("green")}
+            style={{ backgroundColor: "#90d457" }}>
+          </button>
+          <button
+            onClick={() => changeColor("orange")}
+            style={{ backgroundColor: "#f9c276" }}>
+          </button>
+          <button
+            onClick={() => changeColor("pink")}
+            style={{ backgroundColor: "#f99fcb" }}>
+          </button>
         </div>
         <div className={styles.button}>
           <Button

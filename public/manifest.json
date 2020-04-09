@@ -1,19 +1,19 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "To Do Creator",
+  "name": "To Do List Creator",
   "icons": [
     {
-      "src": "favicon.ico",
+      "src": "main-postit.svg",
       "sizes": "64x64 32x32 24x24 16x16",
       "type": "image/x-icon"
     },
     {
-      "src": "logo192.png",
+      "src": "main-postit.svg",
       "type": "image/png",
       "sizes": "192x192"
     },
     {
-      "src": "logo512.png",
+      "src": "main-postit.svg",
       "type": "image/png",
       "sizes": "512x512"
     }

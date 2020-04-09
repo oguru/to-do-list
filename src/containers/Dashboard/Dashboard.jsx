@@ -11,7 +11,10 @@ const Dashboard = () => {
   const [stickyColor, changeColor] = useState("yellow");
 
   let currentDate = new Date();
-  let shortDateCr = `${currentDate.getDate()}/${currentDate.getMonth()}/${currentDate.getFullYear()}`;
+  let shortDateCr = `
+    ${currentDate.getDate()}
+    /${currentDate.getMonth()}
+    /${currentDate.getFullYear()}`;
 
   useEffect(() => {
     fetchData();
@@ -24,11 +27,10 @@ const Dashboard = () => {
       .get()
       .then(querySnapshot => {
         const array = [];
-        
+
         querySnapshot.forEach(doc => {
-          // console.log(doc.fullDate);
-          const id=(doc.id);
-          const addId={...doc.data(), id:id};
+          const id = (doc.id);
+          const addId = { ...doc.data(), id: id };
           array.push(addId);
         });
         updateItems(array);
@@ -37,7 +39,7 @@ const Dashboard = () => {
 
   const addToDb = () => {
 
-    const dateAdded = new Date();    
+    const dateAdded = new Date();
 
     const newDoc = {
       task: newTask,
@@ -57,12 +59,12 @@ const Dashboard = () => {
   };
 
   const removeFromDb = (item) => {
-    
+
     firestore
-    .collection("data")
-    .doc(item.id)
-    .delete()
-    .then(() => fetchData())
+      .collection("data")
+      .doc(item.id)
+      .delete()
+      .then(() => fetchData())
   };
 
 
@@ -70,7 +72,7 @@ const Dashboard = () => {
     <>
       <section className={styles.mainPage}>
         <div className={styles.toDoNotes}>
-        <ToDoCreator
+          <ToDoCreator
             storeColor={changeColor}
             addToDb={addToDb}
             addTask={addTask}
@@ -78,13 +80,14 @@ const Dashboard = () => {
             shortDateCr={shortDateCr}
           />
           {items.map(item => {
-          return <div><ToDoItem 
-            complDate={item.complDate}
-            dateCr={item.dateCr}
-            task={item.task}
-            color={item.color}
-            removeFromDb={() => removeFromDb(item)}
-           /></div>})}
+            return <div><ToDoItem
+              complDate={item.complDate}
+              dateCr={item.dateCr}
+              task={item.task}
+              color={item.color}
+              removeFromDb={() => removeFromDb(item)}
+            /></div>
+          })}
         </div>
       </section>
     </>
