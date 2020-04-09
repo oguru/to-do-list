@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/to-do-list/static/css/main.0578b88d.chunk.css",
+    "main.js": "/to-do-list/static/js/main.b6539414.chunk.js",
+    "main.js.map": "/to-do-list/static/js/main.b6539414.chunk.js.map",
+    "runtime-main.js": "/to-do-list/static/js/runtime-main.7557c059.js",
+    "runtime-main.js.map": "/to-do-list/static/js/runtime-main.7557c059.js.map",
+    "static/js/2.2709c142.chunk.js": "/to-do-list/static/js/2.2709c142.chunk.js",
+    "static/js/2.2709c142.chunk.js.map": "/to-do-list/static/js/2.2709c142.chunk.js.map",
+    "index.html": "/to-do-list/index.html",
+    "precache-manifest.910a083233651350910f71e11ded2742.js": "/to-do-list/precache-manifest.910a083233651350910f71e11ded2742.js",
+    "service-worker.js": "/to-do-list/service-worker.js",
+    "static/css/main.0578b88d.chunk.css.map": "/to-do-list/static/css/main.0578b88d.chunk.css.map",
+    "static/js/2.2709c142.chunk.js.LICENSE.txt": "/to-do-list/static/js/2.2709c142.chunk.js.LICENSE.txt",
+    "static/media/ToDoItem.module.scss": "/to-do-list/static/media/postit-pink.c205b4c2.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.7557c059.js",
+    "static/js/2.2709c142.chunk.js",
+    "static/css/main.0578b88d.chunk.css",
+    "static/js/main.b6539414.chunk.js"
+  ]
+}
