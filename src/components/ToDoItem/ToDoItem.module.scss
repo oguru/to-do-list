@@ -1,0 +1,86 @@
+.yellow {
+    background-image: url(../../assets/main-postit.svg);
+    
+    span, textarea {
+        background-color: #FEFA7E;
+    }
+}
+
+.blue {
+    background-image: url(../../assets/postit-blue.svg);
+
+    span, textarea {
+        background-color: rgb(126, 218, 254);
+    }
+}
+
+.green {
+    background-image: url(../../assets/postit-green.svg);
+
+    span, textarea {
+        background-color: rgb(174, 255, 194);
+    }
+}
+
+.orange {
+    background-image: url(../../assets/postit-orange.svg);
+
+    span, textarea {
+        background-color: rgb(250, 209, 154);
+    }
+}
+
+.pink {
+    background-image: url(../../assets/postit-pink.svg);
+
+    span, textarea {
+        background-color: rgb(242, 180, 255);
+    }
+}
+
+.toDoItem {
+    padding: 10px 0 0 40px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    width: 300px;
+    height: 300px;
+    margin: 10px;
+
+    .container {
+        padding: 12px 0;
+
+        span, textarea {
+            padding: 1px 10px 1px 5px;
+            border: none;
+            margin-left: 5px;
+        }
+        
+        span {
+            width: 90px;
+        }
+
+        label {
+            vertical-align: top;
+        }    
+
+        textarea {
+            border: none;
+            border-radius: 2%;
+            font-size: 15px;
+            word-break: break-all;
+            word-wrap: normal;
+            resize: none;
+            padding: 3px;
+            width: 75%;
+        }    
+    }
+
+
+
+    .button {
+        display: flex;
+        justify-content: center;
+        padding-top: 15px;        
+    }
+}

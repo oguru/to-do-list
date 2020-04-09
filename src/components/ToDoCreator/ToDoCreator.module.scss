@@ -1,21 +1,70 @@
-$postItBg:#FEFA7E;
+.yellow {
+    background-image: url(../../assets/main-postit.svg);
+    input, textarea, span {
+        background-color: #FEFA7E;
+    }
+}
+
+.blue {
+    background-image: url(../../assets/postit-blue.svg);
+    input, textarea, span {
+        background-color: rgb(126, 218, 254);
+    }
+}
+
+.green {
+    background-image: url(../../assets/postit-green.svg);
+    input, textarea, span {
+        background-color: rgb(174, 255, 194);
+    }
+}
+
+.orange {
+    background-image: url(../../assets/postit-orange.svg);
+    input, textarea, span {
+        background-color: rgb(250, 209, 154);
+    }
+}
+
+.pink {
+    background-image: url(../../assets/postit-pink.svg);
+    input, textarea, span {
+        background-color: rgb(242, 180, 255);
+    }
+}
+
+* {
+    transition: 1s;
+}
 
 .toDoCreator {
     padding: 20px 0 60px 40px;
-    background-image: url(../../assets/main-postit.svg);
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
     width: 500px;
     height: 500px;
+    transition: 1s;
+
+    .colorButtons {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        button {
+            padding: 10px;
+            margin: 5px;
+        }
+    }
 
     span {
-        padding: 1px 10px 1px 5px;
-        background-color: $postItBg;
+        padding: 3px 10px 3px 5px;
+        margin-left: 5px;
     }
 
     h1 {
         text-align: center;
+        font-size: 34px;
     }
 
     .container {
@@ -24,32 +73,39 @@ $postItBg:#FEFA7E;
 
     label {
         vertical-align: top;
-        padding-right: 5px;
+        // padding-right: 5px;
     }
 
-    input {
-        opacity: 0.3;
+    input, textarea {
         border: none;
-        border-radius: 10%;
-        font-size: 15px;
+        border-radius: 2%;
         word-break: break-all;
-        word-wrap: normal
+        word-wrap: normal;
+        transition: 1s;
+        resize: none;
+        padding: 3px;
+        margin-left: 5px;
+        }
+
+        input {
+            width: 90px;
+        }
+    
+        textarea {
+            overflow: auto;
         }
 
     .task {
         width: 85%;
-        height: 100px;
-        padding-bottom: 85px;
+        height: 80px;
     }
 
     .button {
         display: flex;
         justify-content: center;
         padding-top: 15px;
+        transition: 1s;
         
-        button {
-            // background-color: #e0e008;
 
-        }
     }
 }

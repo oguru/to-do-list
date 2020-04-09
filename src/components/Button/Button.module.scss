@@ -1,9 +1,37 @@
 .button {
   width: 30%;
   height: 50px;
-  border-radius: 10%;
-  border: none;
-  // outline: none;
+  border-radius: 5%;
+  outline: none;
   font-size: large;
   font-weight: bold;
+}
+
+.noBorder {
+    border: none;
+}
+
+.yellow {
+      background-color: #FEFA7E;
+      border-color: #FEFA7E;
+}
+
+.blue {
+      background-color: rgb(126, 218, 254); 
+      border-color: rgb(126, 218, 254); 
+}
+
+.green {
+      background-color: rgb(174, 255, 194); 
+      border-color: rgb(174, 255, 194); 
+}
+
+.orange {
+      background-color: rgb(250, 209, 154);
+      border-color: rgb(250, 209, 154);
+}
+
+.pink {
+      background-color: rgb(242, 180, 255);
+      border-color: rgb(242, 180, 255);
 }

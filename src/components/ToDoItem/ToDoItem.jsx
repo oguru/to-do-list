@@ -3,31 +3,32 @@ import styles from "./ToDoItem.module.scss";
 import Button from "../Button";
 
 const ToDoItem = props => {
-  const { task, dateCr, dateComp, item, removeFromDb } = props;
+  const {color, complDate, dateCr, task, removeFromDb } = props;
 
   return (
     <>
-      <div className={styles.toDoCreator}>
-        <h1>Task</h1>
+      <div className={`${styles.toDoItem} ${styles[color]}`}>
         <div className={styles.container}>
-          <p>{task}</p>
+          <label>Task:</label>
+          <textarea readOnly>{task}</textarea>
         </div>
         <div className={styles.container}>
           <p>
-            Date created: <span>{dateCr}</span>
+            Date created:<span>{dateCr}</span>
           </p>
         </div>
         <div className={styles.container}>
           <p>
-            Completion date: <span>{dateComp}</span>
+            Completion date: <span>{complDate}</span>
           </p>
         </div>
         <div className={styles.button}>
           <Button
-            color={"#e0e008"}
+            color={color}
             btnText={"Delete"}
             btnStyle={"delete"}
-            // handleClick={on}
+            handleClick={removeFromDb}
+            noBorder={"noBorder"}
           />
         </div>
       </div>

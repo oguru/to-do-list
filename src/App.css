@@ -4,5 +4,14 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Patrick Hand', cursive
+  font-family: 'Patrick Hand', cursive;
+  font-size: 17px;
+  outline: none;
+}
+
+body {
+  background-image: url("https://pics.clipartpng.com/Fridge_Freezer_Inox_PNG_Clip_Art-2910.png");
+  background-size: cover;
+  background-repeat: repeat-y;
+
 }
