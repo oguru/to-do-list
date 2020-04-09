@@ -10,7 +10,7 @@
 }
 
 body {
-  background-image: url("https://pics.clipartpng.com/Fridge_Freezer_Inox_PNG_Clip_Art-2910.png");
+  background-image: url("./assets/fridge.png");
   background-size: cover;
   background-repeat: repeat-y;
 
