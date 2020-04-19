@@ -1,7 +1,7 @@
 # Todo List Creator
 
 ## Description
-A to do list creator, made in react to practice utilising CRUD with a database
+A to do list creator, made in React to practice utilising CRUD with a database
 
 ## Still To Do
 Extend to add authentication, so the user can have their own account and personalised todo lists.\
