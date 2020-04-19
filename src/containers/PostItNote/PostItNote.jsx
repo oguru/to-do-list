@@ -5,11 +5,9 @@ import ToDoItem from "../../components/ToDoItem"
 const PostItNote = () => {
 
   return (
-    <>
       <div className={styles.postIt}>
         <ToDoItem />
       </div>
-    </>
   );
 };
 

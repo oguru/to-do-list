@@ -7,14 +7,15 @@ const Button = props => {
   const buttonStyle = `styles.${btnStyle}`;
 
   return (
-    <>
       <button
         onClick={handleClick}
-        className={`${buttonStyle} ${styles.button} ${styles[color]} ${styles[noBorder]}`}
-      >
+        className={`
+          ${buttonStyle} 
+          ${styles.button} 
+          ${styles[color]} 
+          ${styles[noBorder]}`}>
         {btnText}
       </button>
-    </>
   );
 };
 

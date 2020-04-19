@@ -69,28 +69,26 @@ const Dashboard = () => {
 
 
   return (
-    <>
-      <section className={styles.mainPage}>
-        <div className={styles.toDoNotes}>
-          <ToDoCreator
-            storeColor={changeColor}
-            addToDb={addToDb}
-            addTask={addTask}
-            setDate={setDate}
-            shortDateCr={shortDateCr}
-          />
-          {items.map(item => {
-            return <div><ToDoItem
-              complDate={item.complDate}
-              dateCr={item.dateCr}
-              task={item.task}
-              color={item.color}
-              removeFromDb={() => removeFromDb(item)}
-            /></div>
-          })}
-        </div>
-      </section>
-    </>
+    <section className={styles.mainPage}>
+      <div className={styles.toDoNotes}>
+        <ToDoCreator
+          storeColor={changeColor}
+          addToDb={addToDb}
+          addTask={addTask}
+          setDate={setDate}
+          shortDateCr={shortDateCr}
+        />
+        {items.map(item => {
+          return <div><ToDoItem
+            complDate={item.complDate}
+            dateCr={item.dateCr}
+            task={item.task}
+            color={item.color}
+            removeFromDb={() => removeFromDb(item)}
+          /></div>
+        })}
+      </div>
+    </section>
   );
 };
 

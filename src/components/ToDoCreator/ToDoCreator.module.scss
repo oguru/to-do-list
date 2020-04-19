@@ -44,7 +44,6 @@
     background-position: center;
     width: 500px;
     height: 500px;
-    transition: 1s;
 
     .colorButtons {
         display: flex;
@@ -80,7 +79,6 @@
         border-radius: 2%;
         word-break: break-all;
         word-wrap: normal;
-        transition: 1s;
         resize: none;
         padding: 3px;
         margin-left: 5px;
@@ -103,11 +101,9 @@
         display: flex;
         justify-content: center;
         padding-top: 15px;
-        transition: 1s;
-        
-
     }
 }
+
 @media only screen and (min-width: 425px) {
     .toDoCreator {
         padding: 20px 20px 60px 40px;

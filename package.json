@@ -1,5 +1,4 @@
 {
-  "homepage": "http://oguru.github.io/to-do-list",
   "name": "to-do-list",
   "version": "0.1.0",
   "private": true,
@@ -15,7 +14,6 @@
   },
   "scripts": {
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
@@ -38,7 +36,6 @@
   },
   "devDependencies": {
     "node-sass": "^4.13.1",
-    "mkrc": "^1.2.22",
-    "gh-pages": "^2.2.0"
+    "mkrc": "^1.2.22"
   }
 }
