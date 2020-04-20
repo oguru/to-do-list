@@ -5,6 +5,7 @@ A to do list creator, made in React to practice utilising CRUD with a database
 
 ## Still To Do
 * Extend to add authentication, so the user can have their own account and personalised todo lists.
+* Extend to add 
 * Add an option to complete which will store the notes in another section.
 * Improve the UI for a clearer and more intuitive layout.
 
