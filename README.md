@@ -20,4 +20,4 @@ Sass\
 Firebase\
 mkrc
 
-#### [Link](https://todo.peterdev.co.uk/) to live hosted project.
+#### [Link](https://todo.petedev.co.uk/) to live hosted project.
